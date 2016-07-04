@@ -12,7 +12,7 @@ hr.light{border-color:#fff}
 a{transition:all .35s;color:#F05F40}
 a:focus,a:hover{color:#eb3812}
 p{font-size:16px;line-height:1.5;margin-bottom:20px}
-.bg-primary{background-color:#F05F40}
+.bg-primary{background-color:black}/*.bg-primary{background-color:#F05F40}*/
 .bg-dark{background-color:#222;color:#fff}
 .text-faded{color:rgba(255,255,255,.7)}
 section{padding:100px 0}

@@ -1,0 +1,272 @@
+
+/* header logo */
+
+#header-logo{
+	width: 0px;
+	height: 0px;
+}
+
+#header-logo-col{
+	width: 0px;
+	height: 0px;
+}
+
+#headline-small{
+	padding-top: 55px !important;
+    padding-right: 0px;
+    padding-bottom: 55px !important;
+    padding-left: 0px;
+}
+
+#header-link{
+	color:black;
+	border:0px solid transparent;
+}
+
+#header-list-element{
+	border:0px solid transparent;
+}
+
+/* onhover */
+
+.btn.sharp {
+	background: rgba(0,0,0,0) !important;
+	color: rgba(0,0,0,.9) !important;
+	border-radius: 0;
+	font-size: 21px;
+	padding-top: 15px !important;
+    padding-bottom: 15px !important;
+	line-height: 20px;
+}
+
+.btn.sharp:hover {
+	background: rgba(0,0,0,.3) !important;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	background-color: rgba(0,0,0,.3);
+}
+
+.dropdown-toggle:focus{
+	background: rgba(0,0,0,.3) !important;
+}
+
+.dropdown-menu{
+	border: 1px solid rgba(0,0,0,.3);
+}
+
+.title-button-only:hover {
+	background: rgba(0,0,0,.3) !important;
+}
+
+/* #dropdown-only{
+	pointer-events: none;
+	cursor: default;
+} */
+
+/* circle download button */
+
+#download-katalog-button{
+	width: 140px;
+	height: 140px;
+	background-color: rgba(102, 255, 217,.8);
+	border-radius: 140px;
+	display: flex;
+    align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+#download-katalog-button:hover{
+	background-color: rgba(102, 255, 217,.89);
+}
+
+#download-katalog-link{
+	text-decoration: none;
+	text-color: black;
+	width:140px !important;
+	height: 140px;
+	border-radius: 140px;
+}
+
+#download-katalog-link:hover{
+	text-color: black !important;
+}
+
+#download-button-div{
+	padding-top: 500px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 80px;
+	
+	width: 140px;
+	height: 140px;
+	border-radius: 140px;
+	display: flex;
+    align-items: center;
+	font-size: 18px;
+}
+
+/*  */
+
+@media (min-width:768px){
+	#header-logo{
+		transform: translate(0%, 15%);
+		outline: none;
+		width: 216px;
+		height: 100px;
+		margin-bottom: 10px;
+	}
+	
+	#headerlink{
+		font-size:0px;
+	}
+	
+	#header-logo-col{
+		width: 100%;
+		height: 100%;
+	}
+	
+	#nav-home-button{
+		font-size:0px;
+		width: 0px;
+		height: 0px;
+		display:none;
+	}
+}
+
+
+#bs-example-navbar-collapse-1{
+}
+
+
+/* map stuff */
+.map {
+    height: 500px;
+	padding: 0px;
+}
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+.map iframe {
+    pointer-events: none;
+}
+
+/*  */
+
+#white-head-section{
+	padding-top: 80px !important;
+    padding-right: 0px;
+    padding-bottom: 80px !important;
+    padding-left: 0px;
+	    /* background-color: #c7d6d5; */
+}
+
+#white-middle-section{
+	padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+}
+
+#product{
+	padding-top: 30px !important;
+    padding-right: 0px;
+    padding-bottom: 30px !important;
+    padding-left: 0px;
+}
+
+#product-info{
+    padding-top: 30px !important;
+    padding-right: 0px;
+    padding-bottom: 30px !important;
+    padding-left: 0px;
+}
+
+#product-info-text{
+	padding-top: 30px;
+}
+
+#no-margin-text{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+#product-images{
+	width: 80%;
+}
+
+#price-text{
+	font-weight: bold;
+/* 	border-bottom: 1px dotted black; */
+	padding-top: 40px;
+}
+
+#bath-type-link{
+	color:white;
+	text-decoration: none;
+}
+
+/* maps */
+
+#map_wrapper {
+    height: 100%;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#location-scroll{
+	height:500px;
+	max-height:500px;
+	background-color:#ffffff;
+	border: 0px;
+}
+
+#scroll-element{
+	border:1px solid black;
+}
+
+#breakline{
+	width:100%;
+	max-width:100% !important;
+	border-width:2px !important;
+}
+
+#product-image{
+	margin-top: 100px;
+}
+
+#system-teknik-dots-image{
+	margin: 0 auto;
+}
+
+.thumb{
+	display: none;
+}
+
+@media (min-width:992px){.btn.sharp{font-size:16px;}}
+
+/*ipad made text take up two rows*/
+@media (min-width:1200px){.btn.sharp{font-size:21px;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

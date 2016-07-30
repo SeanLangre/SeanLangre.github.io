@@ -221,14 +221,12 @@ Midgårdsvägen 24
 	
 	<!-- Map -->
 	
-	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAbo6nDG676lqdDjLaTQ09zCtGifeUI5DQ" async="" defer="defer" type="text/javascript"></script>
-	
 	<script>
 
 		jQuery(function($) {
 			// Asynchronously Load the map API 
 			var script = document.createElement('script');
-			script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+			script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize&key=AIzaSyAbo6nDG676lqdDjLaTQ09zCtGifeUI5DQ";
 			document.body.appendChild(script);
 		});
 		

@@ -1,6 +1,10 @@
 
 /* header logo */
 
+body{
+	background-color:#F0F0E0;
+}
+
 #header-logo{
 	width: 0px;
 	height: 0px;

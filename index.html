@@ -58,70 +58,12 @@
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-		
-				<!-- Insert LOGO here -->
-			<div class="col-lg-12 text-center" id="header-logo-col" href="index.html">
-				<a href="index.html">
-					<img id="header-logo" border="0" src="img/header_logo.png">
-				</a>
-			</div>
-			
-		
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-				<a class="navbar-brand page-scroll" id="headerlink" href="#page-top">Comfornette</a>
-            </div>
-			
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				
-				
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2" style="border: 0px solid black;">
-						
-							<ul class="nav navbar-nav">
-								<li id="nav-home-button">
-									<a href="index.html" >Hem</a>
-								</li>
-								<li>
-									<a href="produkter.html">Produkter</a>
-								</li>
-								<li>
-									<a href="systemteknik.html">system och teknik</a>
-								</li>
-								<li>
-									<a href="aterforsaljare.html">Återförsäljare</a>
-								</li>
-								<li>
-									<a href="kontakt.html">Kontakt</a>
-								</li>
-							</ul>
-						
-						</div>
-					</div>
-				</div>
-				
-            </div>
-			
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-		<section id="white-head-section">
-    </section>
 
     <section class="bg-primary" id="headline-small">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Återförsäljare</h2>
+                    <h2 class="section-heading">Choose pokemans</h2>
                 </div>
             </div>
         </div>
@@ -158,50 +100,6 @@ Midgårdsvägen 24
 		
 		</div>
 		
-    </section>
-	
-<!-- 	<section id="contact" class="map">
-		
-		<div id="map_wrapper">
-			<div id="map_canvas" class="mapping"></div>
-		</div>
-		
-    </section> -->
-	
-	<!-- old -->
-	
-<!--     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=1vLZWpx64Rs8LuuB4XOcvCQKu2Ws">
-		</iframe>
-        <br />
-         <small>
-            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8529.931625041576!2d11.913011187280267!3d57.691265100905575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41926889f5278b22!2sComfornette+Svenska+AB!5e0!3m2!1ssv!2sse!4v1467656403689"></a>
-        </small> 
-        </iframe>
-    </section> -->
-	
-	<!--contact-->
-	
-
-<!-- 	    <section id="white-middle-section">
-    </section> -->
-	
-	<section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-<!--                     <h2 class="section-heading">Badkar som får tankarna att flyta iväg</h2>
-                    <hr class="light"> -->
-				<h2> Comfornette </h2>
-				<hr class="light">
-				<h4> - SVENSKA BADKAR FÖR SVENSKA BADRUM </h4>
-				<p class="text-faded">Sedan 1992 har vi på comfornette tillverkat och monterat olika sorters badkar och är nu ett av de äldsta varumärkena i branschen. Massagebadkar samt utomhus-spa är vår specialitet och vår produktion är placerad i Sverige för att ha den bästa anpassningen till den svenska badrumsstandarden. Vi har genom åren skaffat oss stor kunskap om vatten- och luftmassage för att ge dig som användare maximal njutning och avkoppling. Comfornette använder sig av den senaste teknologin inom vattenmassage: IMS(Intelligent Massage System), som är en standard för framtiden massagebadkar.</p>
-					
-					
-                    <!-- <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a> -->
-                </div>
-            </div>
-        </div>
     </section>
 	
     <!-- jQuery -->
@@ -331,6 +229,28 @@ Midgårdsvägen 24
 			bounds.extend(position);
 			map.fitBounds(bounds);
 			map.setZoom(15);
+		}
+		
+		<!-- add marker -->
+		function placeMarker(pokmemonName) {
+			// Try HTML5 geolocation.
+			if (navigator.geolocation) {
+			  navigator.geolocation.getCurrentPosition(function(position) {
+				var pos = {
+				  lat: position.coords.latitude,
+				  lng: position.coords.longitude
+				};
+
+				infoWindow.setPosition(pos);
+				infoWindow.setContent('Location found.');
+				map.setCenter(pos);
+			  }, function() {
+				handleLocationError(true, infoWindow, map.getCenter());
+			  });
+			} else {
+			  // Browser doesn't support Geolocation
+			  handleLocationError(false, infoWindow, map.getCenter());
+			}
 		}
 		
 	</script>

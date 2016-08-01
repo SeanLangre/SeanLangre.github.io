@@ -29,7 +29,7 @@
 	<meta http-equiv="expires" content="Sat, 31 Oct 2014 00:00:00 GMT">
 	<meta http-equiv="pragma" content="no-cache"> -->
 	
-    <title>Comfornette</title>
+    <title>asd</title>
 	
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,49 +63,102 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Choose pokemans</h2>
+                    <h2 class="section-heading">POKEMAANS</h2>
                 </div>
             </div>
         </div>
     </section>
 	
-	<!-- new -->
+	<div class="text-center">
 	
-	<!-- <section id="contact" class="map">
-		<div class="col-xs-12" id="map_wrapper">
-	
-			<div class="col-xs-6" id="map_wrapper">
-				<div id="map_canvas" class="mapping"></div>
-			</div>
-			<div class="col-xs-4" style="border-left:1px solid black;">
-				<pre class="pre-scrollable" id="location-scroll">
-<div class="text-left" id="scroll-element"><h3 id="no-margin-text">Comfort Rör city i Luleå AB</h3><p id="no-margin-text">Tel: 0920-222255
-Midgårdsvägen 24
-973 34 Luleå</p></div>
-<div id="scroll-element"><h3 id="no-margin-text">Comfort Rör city i Luleå AB</h3><p id="no-margin-text">Tel: 0920-222255
-Midgårdsvägen 24
-973 34 Luleå</p></div>
-<div id="scroll-element"><h3 id="no-margin-text">Comfort Rör city i Luleå AB</h3><p id="no-margin-text">Tel: 0920-222255
-Midgårdsvägen 24
-973 34 Luleå</p></div>
-<div id="scroll-element"><h3 id="no-margin-text">Comfort Rör city i Luleå AB</h3><p id="no-margin-text">Tel: 0920-222255
-Midgårdsvägen 24
-973 34 Luleå</p></div>
-<div id="scroll-element"><h3 id="no-margin-text">Comfort Rör city i Luleå AB</h3><p id="no-margin-text">Tel: 0920-222255
-Midgårdsvägen 24
-973 34 Luleå</p></div>
-
-				</pre>
-			</div>
+		<h2> Choose defender Element</h2>
 		
-		</div>
+		<!-- new -->
+		<button type="button" class="btn btn-primary" id="Normal">Normal</button>
+		<button type="button" class="btn btn-primary" id="Fire">Fire</button>
+		<button type="button" class="btn btn-primary" id="Water">Water</button>
+		<button type="button" class="btn btn-primary" id="Electric">Electric</button>
+		<button type="button" class="btn btn-primary" id="Grass">Grass</button>
+		<button type="button" class="btn btn-primary" id="Ice">Ice</button>
+		<button type="button" class="btn btn-primary" id="Fighting">Fighting</button>
+		<button type="button" class="btn btn-primary" id="Poison">Poison</button>
+		<button type="button" class="btn btn-primary" id="Ground">Ground</button>
+		<button type="button" class="btn btn-primary" id="Fly">Fly</button>
+		<button type="button" class="btn btn-primary" id="Psychic">Psychic</button>
+		<button type="button" class="btn btn-primary" id="Bug">Bug</button>
+		<button type="button" class="btn btn-primary" id="Rock">Rock</button>
+		<button type="button" class="btn btn-primary" id="Ghost">Ghost</button>
+		<button type="button" class="btn btn-primary" id="Dragon">Dragon</button>
+		<button type="button" class="btn btn-primary" id="Dark">Dark</button>
+		<button type="button" class="btn btn-primary" id="Steel">Steel</button>
+		<button type="button" class="btn btn-primary" id="Fairy">Fairy</button>
 		
-    </section> -->
+		<h2 id="elemntText"> Text </h2>
+		
+	</div>
 	
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+	
+	<script>
+		$("#Normal").click(function(){
+			$("#elemntText").text("Fighting");
+		});
+		$("#Fire").click(function(){
+			$("#elemntText").text("Water / Ground / Rock");
+		});
+		$("#Water").click(function(){
+			$("#elemntText").text("Electric / Grass");
+		});
+		$("#Electric").click(function(){
+			$("#elemntText").text("Ground");
+		});
+		$("#Grass").click(function(){
+			$("#elemntText").text("Fire / Ice / Poison / Flying / Bug");
+		});
+		$("#Ice").click(function(){
+			$("#elemntText").text("Fire / Fighting / Rock / Steel");
+		});
+		$("#Fighting").click(function(){
+			$("#elemntText").text("Flying / Psychic / Fairy");
+		});		
+		$("#Poison").click(function(){
+			$("#elemntText").text("Ground / Psychic");
+		});		
+		$("#Ground").click(function(){
+			$("#elemntText").text("Water / Grass / Ice");
+		});		
+		$("#Fly").click(function(){
+			$("#elemntText").text("Electric / Ice / Rock");
+		});
+		$("#Psychic").click(function(){
+			$("#elemntText").text("Bug / Ghost / Dark");
+		});	
+		$("#Bug").click(function(){
+			$("#elemntText").text("Fire / Flying / Rock");
+		});	
+		$("#Rock").click(function(){
+			$("#elemntText").text("Water / Grass / Figthing / Ground / Steel");
+		});	
+		$("#Ghost").click(function(){
+			$("#elemntText").text("Ghost / Dark");
+		});	
+		$("#Dragon").click(function(){
+			$("#elemntText").text("Ice / Dragon / Fairy");
+		});	
+		$("#Dark").click(function(){
+			$("#elemntText").text("Figthing / Bug / Fairy");
+		});	
+		$("#Steel").click(function(){
+			$("#elemntText").text("Fire / Fight / Ground");
+		});	
+		$("#Fairy").click(function(){
+			$("#elemntText").text("Poison / Steel");
+		});			
+		
+	</script>
+	
+	    <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -116,144 +169,7 @@ Midgårdsvägen 24
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
 	
-	
 	<!-- Map -->
-	
-	<script>
-
-		jQuery(function($) {
-			// Asynchronously Load the map API 
-			var script = document.createElement('script');
-			script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize&key=AIzaSyAbo6nDG676lqdDjLaTQ09zCtGifeUI5DQ";
-			document.body.appendChild(script);
-		});
-		
-		var map;
-		
-		function initialize() {
-			//var map;
-			var bounds = new google.maps.LatLngBounds();
-			var mapOptions = {
-				mapTypeId: 'roadmap',
-				scrollwheel: false,
-				draggable: false
-			};
-							
-			// Display a map on the page
-			map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-			map.setTilt(45);
-				
-			// Multiple Markers
-			var markers = [
-				/*['London Eye, London', 51.503454,-0.119562],
-				['Palace of Westminster, London', 51.499633,-0.124755],*/
-				['Comfort Rör city i Luleå AB', 65.602531, 22.139173],
-				['Comfort Infjärdens Värme AB',65.322596, 21.441151],
-				['TTV Värmeteknik AB/Comfort',65.585514, 19.198735],
-				['Lennarts VVS-TJÄNST',67.139404, 20.64566],
-				['Comfort Gällivare Rör AB',67.141388, 20.642095]
-			];
-								
-			// Info Window Content
-			var infoWindowContent = [
-				['<div class="info_content">' +
-'<p id="no-margin-text" style="font-weight:bold"> Comfort Rör city i Luleå AB </p>' + 
-'<p id="no-margin-text"> Tel: 0920-222255 </p>' + 
-'<p id="no-margin-text"> Midgårdsvägen 24 </p>' + 
-'<p id="no-margin-text"> 973 34 Luleå </p>' + 
-'<a href="www.link.se" id="no-margin-text"> www.link.se </a>' + 
-'</div>'],
-				
-				['<div class="info_content">' +
-'<p id="no-margin-text" style="font-weight:bold"> Comfort Infjärdens Värme AB </p>' + 
-'<p id="no-margin-text"> Tel: 0911-23 18 00 </p>' + 
-'<p id="no-margin-text"> Fläktgatan 11 </p>' + 
-'<p id="no-margin-text"> 941 28 PITEÅ </p>' + 
-'<a href="www.link.se" id="no-margin-text"> www.link.se </a>' + 
-'</div>']
-			];
-				
-			// Display multiple markers on a map
-			var infoWindow = new google.maps.InfoWindow(), marker, i;
-			
-			// Loop through our array of markers & place each one on the map  
-			for( i = 0; i < markers.length; i++ ) {
-				var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
-				bounds.extend(position);
-				marker = new google.maps.Marker({
-					position: position,
-					map: map,
-					title: markers[i][0]
-				});
-				
-				// Allow each marker to have an info window    
-				google.maps.event.addListener(marker, 'click', (function(marker, i) {
-					return function() {
-						infoWindow.setContent(infoWindowContent[i][0]);
-						infoWindow.open(map, marker);
-					}
-				})(marker, i));
-
-				// Automatically center the map fitting all markers on the screen
-				map.fitBounds(bounds);
-			}
-
-			// Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
-			var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-				this.setZoom(4);
-				google.maps.event.removeListener(boundsListener);
-			});
-			
-			<!-- set listeners for scrollover -->
-			<!-- mouse leave listener -->
-			map.addListener('mouseout', function() {
-				map.setOptions({ scrollwheel: false });
-				map.setOptions({ draggable: false });
-			});
-			<!-- click map -->
-			map.addListener('click', function() {
-				map.setOptions({ scrollwheel: true });
-				map.setOptions({ draggable: true });
-			});
-			<!-- drag map -->
-			map.addListener('drag', function() {
-				map.setOptions({ scrollwheel: true });
-			});
-			
-		}
-		
-		<!-- 15 = zoom -->
-		function singleMapLoc(latitude, longitude) {
-			var position = new google.maps.LatLng(latitude, longitude);
-			var bounds = new google.maps.LatLngBounds();
-			bounds.extend(position);
-			map.fitBounds(bounds);
-			map.setZoom(15);
-		}
-		
-		<!-- add marker -->
-		function placeMarker(pokmemonName) {
-			// Try HTML5 geolocation.
-			if (navigator.geolocation) {
-			  navigator.geolocation.getCurrentPosition(function(position) {
-				var pos = {
-				  lat: position.coords.latitude,
-				  lng: position.coords.longitude
-				};
-
-				infoWindow.setPosition(pos);
-				infoWindow.setContent('Location found.');
-				map.setCenter(pos);
-			  }, function() {
-				handleLocationError(true, infoWindow, map.getCenter());
-			  });
-			} else {
-			  // Browser doesn't support Geolocation
-			  handleLocationError(false, infoWindow, map.getCenter());
-			}
-		}
-		
-	</script>
 	
 		<!-- Custom JavaScript for map-->
 	<!-- <script>
